@@ -1,4 +1,4 @@
-service: jackson-yuan-aws-lambda-deploy
+service: jackson-yuan-aws-lambda-deploys
 
 provider:
   name: aws
