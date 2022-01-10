@@ -34,5 +34,5 @@ provider:
 functions:
   countItemsInS3Bucket:
     handler: index.countItemsInS3Bucket
-    name: count-items-in-s3-bucket
+    name: count-items-present-in-s3-bucket
 
