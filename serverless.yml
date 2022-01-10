@@ -1,0 +1,15 @@
+service: jackson-yuan-aws-lambda-deploy
+
+frameworkVersion: '2 || 3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: ap-south-1
+
+functions:
+  countItemsInS3Bucket:
+    handler: index.countItemsInS3Bucket
+    name: count-items-in-s3-bucket-1
+
