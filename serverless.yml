@@ -13,6 +13,10 @@ provider:
       Resource: "*"
     - Effect: Allow
       Action:
+        - s3:GetObject
+      Resource: "*"
+    - Effect: Allow
+      Action:
         - ses:SendEmail
         - ses:GetTemplate
         - ses:ListTemplates
@@ -34,5 +38,5 @@ provider:
 functions:
   countItemsInS3Bucket:
     handler: index.countItemsInS3Bucket
-    name: count-items-present-in-s3-bucket
+    name: count-items-in-s3-bucket
 
